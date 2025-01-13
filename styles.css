@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    color: white;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Courier, Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(30deg, #f9d751, #ffad53, #f7875f, #e5686b, #cc5075, #ae3f7a, #8e3479, #6c2d72); /* made at https://learnui.design/tools/gradient-generator.html */
+}
+
+img {
+  width: 600px;
+}
+
+button {
+  font-family: Roboto, sans-serif;
+  border: none;
+  border-radius: 8px;
+  background: #eee;
+}
+
+input {
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 8px 24px;
+  width: 400px;
+  margin-bottom: 16px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: lightgray;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin-top: 36px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.header {
+  display: flex;
+  padding-top: 32px;
+  padding-right: 64px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.left-links {
+  display: flex;
+  gap: 24px;
+}
+
+.right-links{
+  display: flex;
+  gap: 64px;
+  margin-left: auto;
+}
+
+.intro {
+    text-align: center;
+}
+
+.logo {
+    width: 65px;
+    height: 65px;
+    padding-right: 8px;
+}
+
+.name {
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.experience {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    width: 275px;
+    margin: 32px;
+    padding: 12px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 2px 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card .company {
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.card .position {
+    color: #ddd; 
+    font-size: 14px;
+    margin-top: 5px;
+}
